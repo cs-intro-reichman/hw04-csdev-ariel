@@ -173,11 +173,14 @@ public class ArrCharOps {
             char ch1 = str1.charAt(i);
             char ch2 = str2.charAt(i);
             if (ch1 != ch2) {
-                return -1;
-            }
+                if (ch1 < ch2) {
+                    return -1;
+                }
             else {
                 return 1;
             }
+        }
+    }
         if (str1.length() < str2.length()) {
             return -1; 
         } else if (str1.length() > str2.length()) {
@@ -186,4 +189,4 @@ public class ArrCharOps {
         return 0;
     }
 }
-}
+
