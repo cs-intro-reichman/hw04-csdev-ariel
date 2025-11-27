@@ -46,7 +46,7 @@ public class ArrCharOps {
         if (arr1.length != arr2.length) {
             return false;
         }
-        for (int i = 0; i < arr1.length; i++;) {
+        for (int i = 0; i < arr1.length; i++) {
                 if (arr1[i] != arr2[i]) {
                     return false;
                 }
@@ -72,7 +72,7 @@ public class ArrCharOps {
         if (fromIndex >= arr.length) {
             return -1;
     }
-    for (int i = fromIndex; i < arr.length; i++;) {
+    for (int i = fromIndex; i < arr.length; i++) {
         if (arr[i] == ch) {
                 return i;
             }
@@ -84,7 +84,7 @@ public class ArrCharOps {
      *  If no such character is found, returns -1.
      */
     public static int lastIndexOf(char[] arr, char ch) {
-        for (int i = arr.length - 1; i >= 0>; i--) {
+        for (int i = arr.length - 1; i >= 0; i--) {
             if (arr[i] == ch) {
                 return i;
             }
@@ -185,4 +185,5 @@ public class ArrCharOps {
         }
         return 0;
     }
+}
 }
