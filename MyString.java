@@ -18,16 +18,19 @@ public class MyString {
 
     /** Returns the lowercase version of the given string. */
     public static String lowerCase(String str) {
+        String result = "";   
+
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
             
             if (c >= 'A' && c <= 'Z') {
-                result.append((char) (c + ('a' - 'A')));
+                char lower = (char) (c + ('a' - 'A'));
+                result += lower;
             } else {
-                result.append(c);
+                result += c;
             }
         }
-        return result.toString();
+        return result;
     }
 
     public static boolean contains(String str1, String str2) {
