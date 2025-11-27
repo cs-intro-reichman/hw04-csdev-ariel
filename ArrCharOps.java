@@ -139,7 +139,7 @@ public class ArrCharOps {
             hashCode = hashCode + arr[i];
         }
 
-        return hashcode;
+        return hashCode;
     }
 
     /**
@@ -169,7 +169,7 @@ public class ArrCharOps {
      */
     public static int compareTo(String str1, String str2) {
         int lim = Math.min(str1.length(), str2.length());
-        for (int i = 0; i < limit; i++) {
+        for (int i = 0; i < lim; i++) {
             char ch1 = str1.charAt(i);
             char ch2 = str2.charAt(i);
             if (ch1 != ch2) {
