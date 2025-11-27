@@ -25,7 +25,8 @@ public class KeywordsDetector {
             String sentence = sentences[i];
             boolean containsKeyword = false;
             for (int j = 0; j < keywords.length; j++) {
-                if (sentence.toLowerCase().contains(keywords.toLowerCase())) {
+                String keyword = keywords[j];
+                if (sentence.toLowerCase().contains(keyword.toLowerCase())) {
                     containsKeyword = true;
                     break;
                 }
