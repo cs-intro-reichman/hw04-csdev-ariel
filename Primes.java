@@ -13,7 +13,7 @@ public class Primes {
         }
         while (i <= N) {
             if (i % 2 == 0 || i % 3 == 0 || i % 5 == 0) {
-                return false;
+                i += 2;
             }
             else {
                 primeCounter += 1;
